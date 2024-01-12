@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container{
+	width: 100%;
+	height: 100%;
+	padding:5px;
+	margin: 10px auto;
+	background-color:#124678;
+	display:-webkit-flex; 
+	display: -ms-flexbox; 
+	display: flex;
+}
+.flex-item{
+	display: inherit;
+	width:650px;
+	height:400px;
+	background-color:#ccc;
+	margin:5px;
+}
+.flex-item p{
+	width:100%; 
+	text-align:center; 
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;  
+	margin:0; }
 
+.flex-container.wrap{
+   -webkit-flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+   flex-wrap: wrap;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: #00704A;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-content {
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Starbucks</h1>
+        <p>MENU | REWARDS | GIFT CARDS</p>
+    </div>
+    
+    <div class="main-content">
+        <h2>New Year, New Yays</h2>
+        <p>Jump-start your year with a week full of offers in the Starbucks app.</p>
+        <!-- Aquí puedes agregar la imagen del teléfono y cualquier otro contenido que necesites -->
+    </div>
+    
+    <div class="footer">
+        <p>Find a store | Sign in | Join now</p>
+    </div>
+
+<div class="flex-container wrap">
+   <div class="flex-item"><p>1</p></div>
+   <div class="flex-item"><p>2</p></div>
+   <div class="flex-item"><p>3</p></div>
+   <div class="flex-item"><p>4</p></div>
+   <div class="flex-item"><p>5</p></div>
+   <div class="flex-item"><p>6</p></div>
+</div>
+
+</body>
+</html>
